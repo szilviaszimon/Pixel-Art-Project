@@ -6,7 +6,7 @@ const size = document.getElementById("sizePicker");
 const table = document.getElementById("pixelCanvas"); //performance optimalisation
 
 //when size is submitted by the user, call makeGrid()
-sizePicker.addEventListener("click", function(event) {
+sizePicker.addEventListener("submit", function(event) {
     event.preventDefault();
     //using input for number of rows to be created
     const height = document.querySelector("#inputHeight").value;
